@@ -6,6 +6,8 @@ const bodyparser = require("body-parser");
 // banco de dados
 const conection = require("./database/database");
 const userController = require("./usuarios/userController");
+//express-session
+const session = require("express-session");
 
 conection
     .authenticate()
@@ -24,6 +26,11 @@ app.use(express.static('public'));
 //importando o body-parser
 app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
+
+
+app.use(session({
+    secret:"vapo", cookie: {maxAge: 30 * 1000}
+}))
 
 //rotas
 

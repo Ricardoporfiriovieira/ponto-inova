@@ -24,19 +24,19 @@
 
         <div class="card bg-glass" >
           <div class="card-body px-4 py-5 px-md-5" >
-            <form>
+            <form action="/autenticar" method="POST">
               <!-- 2 column grid layout with text inputs for the first and last names -->
 
 
               <!-- User input -->
               <div class="form-floating mb-3">
-                <input type="text" id="form3Example3"  class="form-control"  placeholder="Usuario"/>
+                <input type="text" id="matricula" name="matricula" class="form-control"  placeholder="matricula"/>
                 <label class="form-label input-label" for="form3Example3">Usuario</label>
               </div>
 
               <!-- Password input -->
               <div class="form-floating mb-3">
-                <input type="password" id="form3Example4" class="form-control" placeholder="Senha" />
+                <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" />
                 <label class="form-label input-label" for="form3Example4">Senha</label>
               </div>
 

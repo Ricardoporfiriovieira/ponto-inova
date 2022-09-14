@@ -11,8 +11,8 @@ const usuarios = connection.define("usuarios",{
     },nome:{
         type:sequelize.STRING,
         allowNull: false
-    },sobrenome:{
-        type:sequelize.STRING,
+    },matricula:{
+        type:sequelize.INTEGER,
         allowNull: false
     },nascimento:{
         type:sequelize.STRING,
